@@ -1,0 +1,35 @@
+ul {
+    list-style: none;
+    display: inline-flex;
+    margin: initial;
+    padding: inherit;
+    background-color: white;
+}
+
+li a {
+    text-decoration: none;
+    background-color: white;
+    color: goldenrod;
+    display: block;
+    padding: 10px 15px;
+}
+
+li {
+    text-decoration: none;
+    background-color: white;
+    color: white;
+    display: block;
+    padding: 7px 6rem;
+    width: -webkit-fill-available;
+    align-self: center;
+}
+
+li :hover {
+    background-color: black;
+    border-radius: 20%;
+}
+
+img {
+    width: 150%;
+}
+
