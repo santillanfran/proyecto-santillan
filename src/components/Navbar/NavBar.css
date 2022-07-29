@@ -1,4 +1,4 @@
-ul {
+.list {
     list-style: none;
     display: inline-flex;
     margin: initial;
@@ -6,15 +6,15 @@ ul {
     background-color: white;
 }
 
-li a {
+.item a {
     text-decoration: none;
     background-color: white;
     color: goldenrod;
-    display: block;
+    
     padding: 10px 15px;
 }
 
-li {
+.item {
     text-decoration: none;
     background-color: white;
     color: white;
@@ -24,12 +24,21 @@ li {
     align-self: center;
 }
 
-li :hover {
+.item :hover {
     background-color: black;
     border-radius: 20%;
 }
 
-img {
-    width: 150%;
+.img {
+    width: 80px;
 }
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px;
+    box-shadow: -5px -2px 17px;
+}
+
+
 
