@@ -1,0 +1,4 @@
+.list-container{
+    display: flex;
+    inline-size: min-content;
+}
