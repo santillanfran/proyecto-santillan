@@ -1,6 +1,6 @@
 import "./Item.css"
 
-let stylesButton = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "5px", border: "none", cursor: "pointer"}
+let stylesButton = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "5px", border: "", cursor: "pointer"}
 let stylesPrice = {fontFamily: "'Titillium Web', sans-serif"}
 let stylesCategory = {fontFamily: "'Titillium Web', sans-serif"}
 let styleTittle = {fontFamily: "'Titillium Web', sans-serif"}

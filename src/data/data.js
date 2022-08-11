@@ -16,6 +16,7 @@ export const arrayProducts = [
         price: 700,
         category: "Aromas",
         img: difusorAuto,
+        description: "Los MINI difusores son como los meses: asi como llegan, se van! Recorda que sirven para auto y/o placard, y que son personalizados con la fragancia que mas te agrada.",
         stock: 7,
     }, 
     {
@@ -24,6 +25,7 @@ export const arrayProducts = [
         price: 1300,
         category: "Aromas",
         img: difusorVarillas,
+        description: "",
         stock: 5,
     }, 
     {
@@ -32,6 +34,7 @@ export const arrayProducts = [
         price: 860,
         category: "Aroma",
         img: homeSpray330,
+        description: "",
         stock: 6,
     }, 
     {
@@ -40,6 +43,7 @@ export const arrayProducts = [
         price: 1100,
         category: "Aroma",
         img: homeSpray500,
+        description: "",
         stock: 9,
     }, 
     {
@@ -48,6 +52,7 @@ export const arrayProducts = [
         price: 499,
         category: "Aroma",
         img: jabonExfoliante,
+        description: "",
         stock: 10,
     }, 
     {
@@ -56,6 +61,7 @@ export const arrayProducts = [
         price: 790,
         category: "Aroma",
         img: bombones,
+        description: "",
         stock: 56,
     }, 
     {
@@ -64,6 +70,7 @@ export const arrayProducts = [
         price: 300,
         category: "Aroma",
         img: packVelas,
+        description: "",
         stock: 40,
     }, 
     {
@@ -72,6 +79,7 @@ export const arrayProducts = [
         price: 640,
         category: "Aroma",
         img: perlas,
+        description: "",
         stock: 15,
     }, 
     {
@@ -80,6 +88,7 @@ export const arrayProducts = [
         price: 590,
         category: "Aroma",
         img: sales,
+        description: "",
         stock: 9,
     }, 
     {
@@ -88,6 +97,7 @@ export const arrayProducts = [
         price: 890,
         category: "Aroma",
         img: velaSoja,
+        description: "",
         stock: 7,
     },
 ];

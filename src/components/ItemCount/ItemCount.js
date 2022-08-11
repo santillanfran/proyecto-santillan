@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import  './ItemCount.css'
 
-
-let styles = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "5px", border: "none"}
+let styles = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "21px", border: ""}
 
 function ItemCount(props){
 
@@ -20,19 +20,16 @@ function ItemCount(props){
         setCounter(counter - 1)}
     }
 
-    const onAdd= () => { 
-    console.log(counter) 
-}
 
     return(
-        <div>
-        <h3 className='tituloProducto'>Producto</h3>
+        <div className='ItemCounter'>
         <button style={styles} onClick={ handleDecrement } > - </button>
+        <h3 className='ItemCantidad'> {counter}</h3>
         <button style={styles} onClick={ handleIncrement } > + </button>
-        <h3>Cantidad: {counter}</h3>
         <button style={styles} onClick={ ()=> setCounter (0) } > Limpiar Carrito </button>
-        <button style={styles} onClick={onAdd}> Agregar al Carrito </button>
+        <button style={styles} onClick={() => props.onAdd(counter) }> Agregar al Carrito </button>
         </div>
+
     )
 }
 export default ItemCount;

@@ -1,0 +1,8 @@
+.ItemCounter {
+    text-align: center;
+    display: block;
+}
+
+.ItemCantidad {
+    display: inline;
+}

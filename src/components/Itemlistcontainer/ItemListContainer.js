@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import ItemCount from '../Clickcounter/ItemCount';
+import ItemCount from '../ItemCount/ItemCount';
 import {arrayProducts} from '../../data/data.js'
-import ItemList from '../Items/ItemList'
+import ItemList from '../ItemList/ItemList'
 
 let styles = {fontSize: "15px", color: "black",}
 
