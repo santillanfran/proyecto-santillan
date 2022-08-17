@@ -25,7 +25,7 @@ export const arrayProducts = [
         price: 1300,
         category: "Aromas",
         img: difusorVarillas,
-        description: "",
+        description: "Son los que hacen de tu espacio un lugar especial. Nosotros te recomendamos utilizarlo en lugares como el baño o una habitacion. Podes escoger el aroma que mas te guste! ",
         stock: 5,
     }, 
     {
@@ -34,7 +34,7 @@ export const arrayProducts = [
         price: 860,
         category: "Aroma",
         img: homeSpray330,
-        description: "",
+        description: "Nuestro Home Spray está pensado para que puedas darle a tus espacios, ese toque especial que le hace falta. Recorda que podes elegir el aroma que mas te guste!",
         stock: 6,
     }, 
     {
@@ -43,7 +43,7 @@ export const arrayProducts = [
         price: 1100,
         category: "Aroma",
         img: homeSpray500,
-        description: "",
+        description: "Nuestro Home Spray está pensado para que puedas darle a tus espacios, ese toque especial que le hace falta. Recorda que podes elegir el aroma que mas te guste!",
         stock: 9,
     }, 
     {
@@ -52,7 +52,7 @@ export const arrayProducts = [
         price: 499,
         category: "Aroma",
         img: jabonExfoliante,
-        description: "",
+        description: "Son jabones artesanales , 100% ORGÁNICOS y hechos con productos totalmente naturales!. Para su elaboración se utiliza glicerina vegetal, la mayoria contiene aceite de coco y de almendras.",
         stock: 10,
     }, 
     {
@@ -61,7 +61,7 @@ export const arrayProducts = [
         price: 790,
         category: "Aroma",
         img: bombones,
-        description: "",
+        description: "Ideales para hornito. En lugar de colocar agua y escencia, pones uno o dos bombones, encendes debajo la velita y a disfrutar del más rico aroma!!",
         stock: 56,
     }, 
     {
@@ -70,7 +70,7 @@ export const arrayProducts = [
         price: 300,
         category: "Aroma",
         img: packVelas,
-        description: "",
+        description: "Las que necesitas esas noches en las que buscas tranquilidad y paz. Ideales para lograr una luz tenue y un espacio relajado. El pack incluye 4 unidades, pero podes seleccionar la cantidad que necesites! No pierdas la oportunidad de decorar tus espacios de la mejor manera",
         stock: 40,
     }, 
     {
@@ -79,7 +79,7 @@ export const arrayProducts = [
         price: 640,
         category: "Aroma",
         img: perlas,
-        description: "",
+        description: "Son bolitas de cerámica bizcochada, que se aromatizan con escencias naturales puras. Son espectaculares para aromatizar espacios de guardado. Incluso te digo, para dejar en el auto!",
         stock: 15,
     }, 
     {
@@ -88,7 +88,7 @@ export const arrayProducts = [
         price: 590,
         category: "Aroma",
         img: sales,
-        description: "",
+        description: "Sales indicadas para una buena ducha que te relaje como vos te mereces!",
         stock: 9,
     }, 
     {
@@ -97,7 +97,7 @@ export const arrayProducts = [
         price: 890,
         category: "Aroma",
         img: velaSoja,
-        description: "",
+        description: "Velas hechas a base de cera de soja! Super aromaticas y naturales. Ideales para tus espacios mas intimos! Si buscas algo elegante, te recomendamos nuestras velas de cera de soja!",
         stock: 7,
     },
 ];

@@ -9,10 +9,9 @@ function NavBar(){
     return(
         <div className='nav-container' >
         
-        <img className='img' src={Faro}></img>
+        <Link to="/"><img className='img' src={Faro}></img> </Link>
         
         <ul className='list'>
-        <Link to="/"> <li className='item'><a href="">Inicio</a> </li></Link> 
             <li className='item'><a href="">Aromas</a></li>
             <li className='item'><a href="">Deco</a></li>
             <li className='item'><a href="">Textiles</a></li>
