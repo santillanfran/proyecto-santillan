@@ -1,0 +1,39 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: -5px 0px 5px;
+}
+
+.listInfo{
+    
+    place-self: center;
+}
+
+.Info {
+    list-style: none;
+}
+
+.img {
+    align-self: center;
+    width: 6rem;
+}
+
+.propiedad {
+    font-size: small;
+    place-self: center;
+}
+
+.itemFooter { 
+    font-family: "'Titillium Web', sans-serif";
+    font-weight: bolder;
+    color:black;
+}
+
+.itemFooter a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bolder;
+}
+

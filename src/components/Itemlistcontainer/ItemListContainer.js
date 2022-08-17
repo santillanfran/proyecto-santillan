@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import {arrayProducts} from '../../data/data.js'
 import ItemList from '../ItemList/ItemList'
 
-let styles = {fontSize: "15px", color: "black",}
+let styles = {fontSize: "30px", color: "black", textAlignLast: "center"}
 
 function ItemListContainer(props) {
 
@@ -25,7 +25,7 @@ useEffect(
 
   return (
     <div>
-      <h2> {props.greeting} </h2>
+      <h2 style={styles}> {props.greeting} </h2>
       <ItemList data={data} />
     </div>
   )

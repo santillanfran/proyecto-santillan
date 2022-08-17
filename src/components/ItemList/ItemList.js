@@ -8,6 +8,7 @@ function ItemList ({data}) {
         data.map((product) => {
         return (
         <Item
+        id={product.id}
         key={product.id}
         title={product.title}
         category={product.category}

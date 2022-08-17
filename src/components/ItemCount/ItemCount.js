@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import  './ItemCount.css'
 
-let styles = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "21px", border: ""}
+let styles = { backgroundColor: "goldenrod", borderRadius: "14%", color: "white", margin: "21px", cursor: "pointer"}
 
 function ItemCount(props){
 

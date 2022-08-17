@@ -10,7 +10,8 @@
     text-decoration: none;
     background-color: white;
     color: goldenrod;
-    
+    font-family: "'Titillium Web', sans-serif";
+    font-size: larger;
     padding: 10px 15px;
 }
 

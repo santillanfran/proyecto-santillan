@@ -16,7 +16,7 @@ export const arrayProducts = [
         price: 700,
         category: "Aromas",
         img: difusorAuto,
-        description: "Los MINI difusores son como los meses: asi como llegan, se van! Recorda que sirven para auto y/o placard, y que son personalizados con la fragancia que mas te agrada.",
+        description: 'Los "MINI" difusores son como los meses: asi como llegan, se van! Recorda que sirven para auto y/o placard, y que son personalizados con la fragancia que mas te agrada.',
         stock: 7,
     }, 
     {
