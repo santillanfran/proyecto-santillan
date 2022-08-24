@@ -1,0 +1,31 @@
+.imgCart{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    max-width: 20%;
+    height: 100%;
+    border: 2px solid rgb(84, 73, 73);
+    border-radius: 5px;
+    float: left;
+    margin: 25px;
+}
+
+.itemCart{
+    width: 100%;
+    border: 2px solid rgb(84, 73, 73);
+    border-radius: 5px;
+    display: flex;
+}
+
+.buttonVolver{
+    background-color: goldenrod;
+    border-radius: 14%;
+    color: white;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.detalleCompra{
+    font-family: "'Titillium Web', sans-serif";
+    text-align-last: center;
+}

@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from "react-router-dom";
 import './ItemDetail.css'
+import Button from 'react-bootstrap/Button';
+import { cartContext } from '../../Store/CartContext';
+
 
 const ItemDetail = ({ data }) => {
 
     const [showCount, setShowCount ] = useState(true)
-
+    const { addToCart } = useContext(cartContext);
     const onAdd= (count) => { 
         console.log("Agregaste " + count + " productos a tu carrito") 
+        addToCart(data, count)
         setShowCount(false)
     }
 
@@ -26,8 +30,9 @@ const ItemDetail = ({ data }) => {
                     <ItemCount onAdd={onAdd}  stock={data.stock} min={1} />
                 ) : (
                     <Link to="/cart"><button className="buttonVolver">Finalizar Compra</button></Link>
-                    
-                )}
+                )
+                
+                }
 
             </div>
 

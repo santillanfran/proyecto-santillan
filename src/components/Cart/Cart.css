@@ -1,0 +1,36 @@
+.button{
+    background-color: goldenrod;
+    border-radius: 14%;
+    color: white;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.cartText{
+
+    color: black;
+    font-family: "'Titillium Web', sans-serif";
+}
+
+.buttonFinal{
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+.buttonSegui{
+    background-color: goldenrod;
+    color: white;
+    border-radius: 14%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.textCenter{
+    text-align: center;
+    font-family: "'Titillium Web', sans-serif";
+}
+
+.sectionResumen{
+    border: solid darkgray;
+}
