@@ -1,5 +1,4 @@
 import React from 'react'
-import Faro from '../../images/faro.jpg'
 import './Footer.css'
 
 function Footer (){
@@ -12,7 +11,7 @@ function Footer (){
                     <li className='itemFooter'><a href='https://www.instagram.com/farodesigndeco/'>Instagram</a></li>
                 </ul>
             </div>
-            <img className='img' src={Faro}></img>
+            <img className='img' src='../images/faro.jpg'></img>
             <p className='propiedad'>© 2022 Faro Design</p>
         </footer>
     )

@@ -14,9 +14,9 @@ const Cart = (id) => {
 
     if (cart.length === 0) {
         return (
-            <div>
+            <div className="divText">
                 <h1 className="cartText">No hay Productos en tu carrito</h1>
-                <Link to="/product/:id" className="button">Volver</Link>
+                <Link to="/" className="button">Volver</Link>
             </div>
         )
     } else {

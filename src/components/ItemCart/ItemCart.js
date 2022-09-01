@@ -12,7 +12,7 @@ const ItemCart = ({ product, removeItem }) => {
                 <div className='detalleCompra'>
                     <h1>PRODUCTO: {product.title}</h1>
                     <hr />
-                    <h2>PRECIO x U: {product.price}</h2>
+                    <h2>PRECIO x U: $ {product.price}</h2>
                     <hr />
                     <h2>CANTIDAD: {product.quantity}</h2>
                     <hr />

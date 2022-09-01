@@ -1,13 +1,4 @@
-import difusorAuto from '../images/DifusorAuto.jpeg'
-import difusorVarillas from '../images/difusorVarillas.jpeg'
-import homeSpray330 from '../images/HomeSpray330.jpeg'
-import homeSpray500 from '../images/HomeSpray500.jpeg'
-import jabonExfoliante from '../images/jabon exfoliante.jpeg'
-import bombones from '../images/jabonBombonx7.jpeg'
-import packVelas from '../images/PackVelasNoche.jpeg'
-import perlas from '../images/PerlasAromaticas.jpeg'
-import sales from '../images/SalesBaño.jpeg'
-import velaSoja from '../images/VelaSoja.jpeg'
+
 
 export const arrayProducts = [ 
     {   
@@ -15,16 +6,16 @@ export const arrayProducts = [
         title: "Difusor de Auto",
         price: 700,
         category: "aromas",
-        img: difusorAuto,
+        img: '../images/DifusorAuto.jpeg',
         description: 'Los "MINI" difusores son como los meses: asi como llegan, se van! Recorda que sirven para auto y/o placard, y que son personalizados con la fragancia que mas te agrada.',
         stock: 7,
     }, 
-    {
+    {  
         id: 2,
         title: "Difusor de Varillas",
         price: 1300,
         category: "aromas",
-        img: difusorVarillas,
+        img: '../images/DifusorVarillas.jpeg',
         description: "Son los que hacen de tu espacio un lugar especial. Nosotros te recomendamos utilizarlo en lugares como el baño o una habitacion. Podes escoger el aroma que mas te guste! ",
         stock: 5,
     }, 
@@ -33,7 +24,7 @@ export const arrayProducts = [
         title: "Home Spray 330ml",
         price: 860,
         category: "aromas",
-        img: homeSpray330,
+        img: '../images/HomeSpray330.jpeg',
         description: "Nuestro Home Spray está pensado para que puedas darle a tus espacios, ese toque especial que le hace falta. Recorda que podes elegir el aroma que mas te guste!",
         stock: 6,
     }, 
@@ -42,7 +33,7 @@ export const arrayProducts = [
         title: "Home Spray 500ml",
         price: 1100,
         category: "aromas",
-        img: homeSpray500,
+        img: '../images/HomeSpray500.jpeg',
         description: "Nuestro Home Spray está pensado para que puedas darle a tus espacios, ese toque especial que le hace falta. Recorda que podes elegir el aroma que mas te guste!",
         stock: 9,
     }, 
@@ -51,7 +42,7 @@ export const arrayProducts = [
         title: "Jabón exfoliante orgánico x unidad",
         price: 499,
         category: "deco",
-        img: jabonExfoliante,
+        img: '../images/jabon exfoliante.jpeg',
         description: "Son jabones artesanales , 100% ORGÁNICOS y hechos con productos totalmente naturales!. Para su elaboración se utiliza glicerina vegetal, la mayoria contiene aceite de coco y de almendras.",
         stock: 10,
     }, 
@@ -60,7 +51,7 @@ export const arrayProducts = [
         title: "Bombones aromáticos Caja x7",
         price: 790,
         category: "deco",
-        img: bombones,
+        img: '../images/jabonBombonx7.jpeg',
         description: "Ideales para hornito. En lugar de colocar agua y escencia, pones uno o dos bombones, encendes debajo la velita y a disfrutar del más rico aroma!!",
         stock: 56,
     }, 
@@ -69,7 +60,7 @@ export const arrayProducts = [
         title: "Pack velas de noche x4",
         price: 300,
         category: "aromas",
-        img: packVelas,
+        img: '../images/PackVelasNoche.jpeg',
         description: "Las que necesitas esas noches en las que buscas tranquilidad y paz. Ideales para lograr una luz tenue y un espacio relajado. El pack incluye 4 unidades, pero podes seleccionar la cantidad que necesites! No pierdas la oportunidad de decorar tus espacios de la mejor manera",
         stock: 40,
     }, 
@@ -78,7 +69,7 @@ export const arrayProducts = [
         title: "Perlas Aromáticas 75gr",
         price: 640,
         category: "textiles",
-        img: perlas,
+        img: '../images/PerlasAromaticas.jpeg',
         description: "Son bolitas de cerámica bizcochada, que se aromatizan con escencias naturales puras. Son espectaculares para aromatizar espacios de guardado. Incluso te digo, para dejar en el auto!",
         stock: 15,
     }, 
@@ -87,7 +78,7 @@ export const arrayProducts = [
         title: "Sales de Baño",
         price: 590,
         category: "aromas",
-        img: sales,
+        img: '../images/SalesBaño.jpeg',
         description: "Sales indicadas para una buena ducha que te relaje como vos te mereces!",
         stock: 9,
     }, 
@@ -96,7 +87,7 @@ export const arrayProducts = [
         title: "Velas de cera de Soja",
         price: 890,
         category: "textiles",
-        img: velaSoja,
+        img: '../images/VelaSoja.jpeg',
         description: "Velas hechas a base de cera de soja! Super aromaticas y naturales. Ideales para tus espacios mas intimos! Si buscas algo elegante, te recomendamos nuestras velas de cera de soja!",
         stock: 7,
     },

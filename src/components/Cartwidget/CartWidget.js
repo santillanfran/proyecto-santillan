@@ -10,7 +10,7 @@ const CartWidget = () => {
     const { cart, totalProduct } = useContext(cartContext)
     return (
     <Link to={`cart`}>
-        <FontAwesomeIcon className="cartWidget" icon={faCartShopping}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
         {cart.length === 0 ?
         <span></span> :
         <span className="badge badge-danger mr-3">{totalProduct()}</span>

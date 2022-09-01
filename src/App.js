@@ -6,10 +6,12 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import { CartProvider } from './Store/CartContext'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer/Footer.js'
+import Footer from './components/Footer/Footer.js';
+import firestoreDB from './services/firebase';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
