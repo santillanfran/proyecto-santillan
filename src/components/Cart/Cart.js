@@ -1,3 +1,4 @@
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { cartContext } from '../../Store/CartContext';
@@ -12,11 +13,31 @@ const Cart = (id) => {
     }
     //console.log(cart)
 
+    const order = {
+        buyer: {
+          name:'Franco',
+          surname: 'Santillan',
+          email: 'francosantillan@gmail.com',
+          telefono: '1122334455'
+        },
+        items: cart.map(item => ({id: item.id, name: item.name, price: item.price, quantity: item.quantity})),
+        total: totalPrice(),
+      }
+    
+      //EMITIR ORDENES DEL CARRITO A FIREBASE
+        const handleClick = () => {
+        const db = getFirestore();
+        const ordersCollection = collection(db, 'ordenes');
+        addDoc(ordersCollection, order)
+        .then(({id}) => console.log(id))
+      }
+
+
     if (cart.length === 0) {
         return (
             <div className="divText">
                 <h1 className="cartText">No hay Productos en tu carrito</h1>
-                <Link to="/" className="button">Volver</Link>
+                <Link to="/"><button className="button">Volver</button></Link>
             </div>
         )
     } else {
@@ -41,7 +62,7 @@ const Cart = (id) => {
                 </section>
 
                 <button onClick={clearCart} className="button">Vaciar Carrito</button>
-                <Link to="/product/:id" className="button">Volver</Link>
+                <Link to="/product/:id"><button className="button">Volver</button></Link>
                 <section className="sectionResumen">
                     <h1 className="cartText">RESUMEN DE TU PEDIDO</h1>
                     <hr />
@@ -54,7 +75,8 @@ const Cart = (id) => {
                     <h2 className="cartText">Total: ${totalPrice() + 250}</h2>
                     <hr />
                     <div className="buttonFinal">
-                    <Link to="/" className='buttonSegui'>Seguí con tu compra</Link>
+                    <Link to="/"><button className='buttonSegui'>Seguí con tu compra</button></Link>
+                    <Link to="/checkout"><button onClick={handleClick} className='buttonSegui'>Finalizá tu compra</button></Link>
                     </div>
                 </section>
             </main>

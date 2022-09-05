@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyBzrz9Y6QnXBV6E-eM8f0hD0WsQfiICmSo",
@@ -15,4 +16,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const firestoreDB = getFirestore(app);
 
-export default firestoreDB;
+function saveProductsToFirebase(){
+  const faroCollection = collection(firestoreDB, 'faro')
+  addDoc();
+}
+
+export {firestoreDB};

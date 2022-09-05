@@ -3,7 +3,7 @@ import { arrayProducts } from '../../data/data';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
-import firestoreDB from '../../services/firebase';
+import {firestoreDB} from '../../services/firebase';
 import { collection, doc, getDoc } from 'firebase/firestore';
 
 

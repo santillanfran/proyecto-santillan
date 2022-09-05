@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react'
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
-import firestoreDB from '../../services/firebase';
+import {firestoreDB} from '../../services/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
+import Spinner from '../Spinner/Spinner'
+import './ItemListContainer.css'
 
 
 let styles = {fontSize: "30px", color: "black", textAlignLast: "center"}
@@ -55,23 +57,21 @@ useEffect(() => {
   });
 
 
-
-  //getProducts().then((respuesta) => {
-    //  console.log(respuesta)
-     // if(category){
-     //   let productsCategory = respuesta.filter((product) => product.category == category)
-      //  setData(productsCategory)
-     // } else {
-      //  setData(respuesta);
-     // }
-     // });
-    // },[category]) 
-
   return  (
+    <>
+    {data.length === 0 ?
+
+    <div className="spinner">
+      <Spinner />
+    </div>
+    :
     <div>
       <h2 style={styles}> {props.greeting} </h2>
       <ItemList data={data} />
     </div>
+}
+    </>
+
   )
 }
 

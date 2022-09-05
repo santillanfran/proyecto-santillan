@@ -8,6 +8,7 @@ import { CartProvider } from './Store/CartContext'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer.js';
 import firestoreDB from './services/firebase';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <Route path="/category/:category" element={<ItemListContainer greeting="Bienvenido a Faro" />} />
           <Route path="/product/:id" element={<ItemDetailContainer />} />
           <Route path="cart" element={<Cart /> } />
+          <Route path='checkout' element={<Checkout />} />
+          <Route path='/thankyou' element={<h1>Gracias por su compra</h1>} />
         </Routes>
         </CartProvider>
         <Footer />
