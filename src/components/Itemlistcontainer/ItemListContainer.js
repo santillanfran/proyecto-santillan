@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
-
 import {firestoreDB} from '../../services/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import Spinner from '../Spinner/Spinner'

@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import 'firebase/auth'
+import arrayProducts from "../data/data";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBzrz9Y6QnXBV6E-eM8f0hD0WsQfiICmSo",
@@ -16,9 +16,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const firestoreDB = getFirestore(app);
 
-function saveProductsToFirebase(){
-  const faroCollection = collection(firestoreDB, 'faro')
-  addDoc();
+export async function arrayToFirebase() {
+  const collectionRef = collection(firestoreDB, "Faro");
+
+  for (const item of arrayProducts) {
+    let newDoc = await addDoc(collectionRef, item);
+    
+  }
 }
 
 export {firestoreDB};

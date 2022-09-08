@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { cartContext } from '../../Store/CartContext';
 import ItemCart from '../ItemCart/ItemCart';
-
 import './Cart.css'
 
 const Cart = (id) => {
@@ -15,22 +14,17 @@ const Cart = (id) => {
 
     const order = {
         buyer: {
-          name:'Franco',
-          surname: 'Santillan',
-          email: 'francosantillan@gmail.com',
-          telefono: '1122334455'
-        },
+        name:'Franco', surname: 'Santillan', email: 'francosantillan@gmail.com', telefono: '1122334455'},
         items: cart.map(item => ({id: item.id, name: item.name, price: item.price, quantity: item.quantity})),
         total: totalPrice(),
-      }
+    }
     
       //EMITIR ORDENES DEL CARRITO A FIREBASE
         const handleClick = () => {
         const db = getFirestore();
-        const ordersCollection = collection(db, 'ordenes');
-        addDoc(ordersCollection, order)
-        .then(({id}) => console.log(id))
-      }
+        const ordersCollection = collection(db, 'orders');
+        addDoc(ordersCollection, order).then(({id}) => console.log(id));
+    }
 
 
     if (cart.length === 0) {
