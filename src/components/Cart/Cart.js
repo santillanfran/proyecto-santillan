@@ -12,19 +12,19 @@ const Cart = (id) => {
     }
     //console.log(cart)
 
-    const order = {
-        buyer: {
-        name:'Franco', surname: 'Santillan', email: 'francosantillan@gmail.com', telefono: '1122334455'},
-        items: cart.map(item => ({id: item.id, name: item.name, price: item.price, quantity: item.quantity})),
-        total: totalPrice(),
-    }
+    // const order = {
+    //     buyer: {
+    //     name:'Franco', surname: 'Santillan', email: 'francosantillan@gmail.com', telefono: '1122334455'},
+    //     items: cart.map(item => ({id: item.id, name: item.name, price: item.price, quantity: item.quantity})),
+    //     total: totalPrice(),
+    // }
     
       //EMITIR ORDENES DEL CARRITO A FIREBASE
-        const handleClick = () => {
-        const db = getFirestore();
-        const ordersCollection = collection(db, 'orders');
-        addDoc(ordersCollection, order).then(({id}) => console.log(id));
-    }
+    //     const handleClick = () => {
+    //     const db = getFirestore();
+    //     const ordersCollection = collection(db, 'orders');
+    //     addDoc(ordersCollection, order).then(({id}) => console.log(id));
+    // }
 
 
     if (cart.length === 0) {
@@ -70,7 +70,7 @@ const Cart = (id) => {
                     <hr />
                     <div className="buttonFinal">
                     <Link to="/"><button className='buttonSegui'>Seguí con tu compra</button></Link>
-                    <Link to="/checkout"><button onClick={handleClick} className='buttonSegui'>Finalizá tu compra</button></Link>
+                    <Link to="/checkout"><button  className='buttonSegui'>Finalizá tu compra</button></Link>
                     </div>
                 </section>
             </main>

@@ -53,7 +53,7 @@ useEffect(() => {
       setData(resolve)
     })
   }
-  });
+  }, [category]);
 
 
   return  (
